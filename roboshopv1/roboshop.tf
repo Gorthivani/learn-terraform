@@ -53,7 +53,8 @@ resource "aws_instance" "mysql" {
   tags = {
     Name = "mysql"
   }
-}resource "aws_instance" "shipping" {
+}
+resource "aws_instance" "shipping" {
   ami           = ami-03265a0778a880afb
   instance_type = "t3.micro"
 
