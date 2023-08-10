@@ -68,5 +68,5 @@ output "fruit_name_1" {
   value = " fruit name =${var.fruit_name}"
 }
 output "fruit_details_apple" {
-  value = "Apple stock=  ${var.fruit_details["apple"].stock} , Apple type=${var.fruit_details[apple].type}, apple sale status =${var.fruit_details["apple"].for_sale}"
+  value = "Apple stock=  ${var.fruit_details["apple"].stock} , Apple type=${var.fruit_details["apple"].type}, apple sale status =${var.fruit_details["apple"].for_sale}"
 }
