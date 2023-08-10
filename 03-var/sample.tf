@@ -44,3 +44,10 @@ output "fruits_first" {
 output "fruits_name" {
   value = var.fruits[1]
 }
+#access map variable ,list index starts from zero
+output "fruit_stock" {
+  value = var.fruit_stock[apple],
+}
+{
+  value = var.fruit_stock[banana]
+}
