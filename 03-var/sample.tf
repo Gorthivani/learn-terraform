@@ -46,6 +46,6 @@ output "fruits_name" {
 }
 #access map variable ,list index starts from zero
 output "fruit_stock" {
-  value = var.fruit_stock[apple]
+  value = var.fruit_stock["apple"]
 }
 
