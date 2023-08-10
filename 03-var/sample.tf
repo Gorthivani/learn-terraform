@@ -10,8 +10,8 @@ output "fruit_name" {
 # list variables
 variable "fruits" {
   default = [
-    apple,
-    banana]
+    "apple",
+    "banana"]
   // default = [apple,banana] // single line synatx
 }
 
