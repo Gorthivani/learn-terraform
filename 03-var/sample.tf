@@ -41,3 +41,6 @@ variable "fruit_stock_with_price" {
 output "fruits_first" {
   value = var.fruits[0]
 }
+output "fruits_name" {
+  value = var.fruits[1]
+}
