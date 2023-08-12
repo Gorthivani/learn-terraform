@@ -1,17 +1,17 @@
 resource "aws_instance" "instance" {
-  for_each = var.components
-  ami           = data.aws_ami_ids.ami
+
+  ami           = data.aws_ami_ids.ami.id
   instance_type = var.instance_type
   vpc_security_group_ids = var.security_groups
 
   tags = {
-    Name = lookup(each.value,"name" ,null )
+    Name = var.name
   }
 }
 resource "aws_route53_record" "www" {
-  for_each = var.components
+
   zone_id = var.zone_id
-  name    = "${var.name}.gorthivani.online"
+  name    = "${var.name}-dev.gorthivani.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.instance.private_ip]
