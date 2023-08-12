@@ -16,7 +16,5 @@ resource "aws_route53_record" "www" {
   ttl     = 30
   records = [aws_instance.instance.private_ip]
 }
-output "instance" {
-  value = aws_instance.instance
-}
+
 
