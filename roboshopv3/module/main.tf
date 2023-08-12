@@ -19,4 +19,4 @@ resource "aws_route53_record" "www" {
 output "instance" {
   value = aws_instance.instance
 }
-variable "ami" {}
+
