@@ -49,4 +49,3 @@ variable "components" {
     }
   }
   }
-}
