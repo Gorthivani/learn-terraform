@@ -1,6 +1,6 @@
 resource "aws_instance" "instance" {
 
-  ami           = data.aws_ami.ami.id
+  ami           = var.ami
   instance_type = var.instance_type
   vpc_security_group_ids = var.security_groups
 
@@ -16,5 +16,4 @@ resource "aws_route53_record" "www" {
   ttl     = 30
   records = [aws_instance.instance.private_ip]
 }
-
 
