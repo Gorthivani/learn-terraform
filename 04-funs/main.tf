@@ -21,3 +21,7 @@ output "fruit_stock" {
   // in these banan is not therevif i acces to get error so by try atlreast we get 0
   value = try(var.fruit_stock["banana"],0)
 }
+output "fruit_stock_1" {
+  value = lookup(var.fruit_stock["apple"],"price" ,2)
+  // value = try(var.fruit_stock["banana"],0)
+}
